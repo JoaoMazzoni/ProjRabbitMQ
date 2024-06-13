@@ -34,6 +34,7 @@ using (var connection = factory.CreateConnection())
             };
 
             channel.BasicConsume(queue: QUEUE_NAME,
+
                                  autoAck: true,
                                  consumer: consumer);
 
